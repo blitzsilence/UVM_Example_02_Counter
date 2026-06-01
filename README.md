@@ -17,42 +17,42 @@ UVM testbench environment practice for a simple counter DUT
     ├── rtl
     │   └── dut.sv
     │
-    ├── sim
+    ├── tb_direct_test
     │   ├── Makefile
-    │   └── runlist
+    │   └── tb_counter.sv
     │ 
-    └── tb
-        ├── env
-        │   ├── agent.sv
-        │   ├── env.sv
-        │   ├── monitor.sv
-        │   ├── ref_model.sv
-        │   ├── scoreboard.sv
-        │   ├── sequencer.sv
-        │   ├── sequencer.sv
-        │   └── transaction.sv
+    └── tb_uvm_testbench
+        ├── sim
+        │   └── Makefile
         │ 
-        ├── interface
-        │   └── interface.sv
-        │
-        ├── package
-        │   └── env_pkg.sv
-        │ 
-        ├── testcase
-        │   ├── base_test.sv
-        │   ├── my_case1.sv
-        │   └── my_case1.sv
-        │        
-        └── top
-            ├── tb_top.sv
-            ├── rtl.f
-            └── tb.f
+        └── tb
+            ├── env
+            │   ├── agent.sv
+            │   ├── driver.sv        
+            │   ├── env.sv
+            │   ├── monitor.sv
+            │   ├── scoreboard.sv
+            │   ├── sequence.sv
+            │   └── transaction.sv
+            │ 
+            ├── interface
+            │   └── interface.sv
+            │ 
+            ├── testcase
+            │   ├── base_test.sv
+            │   ├── my_case0.sv
+            │   └── my_case1.sv
+            │        
+            └── top
+                ├── rtl.f
+                ├── tb.f
+                └── tb_top.sv
 ```
 
 ## Makefile excution note
 make comp 
 
-make all TESTNAME=basetest
+make sim TESTNAME=basetest
 
 make sim TESTNAME=my_case0
 
