@@ -1,11 +1,11 @@
 # UVM_Example_Counter
 
-#### Intro
+## Intro
 
 UVM testbench environment practice for a simple counter DUT
 
 
-#### Verification Environment
+## Verification Environment
 ```
     Project_root
     │
@@ -49,7 +49,7 @@ UVM testbench environment practice for a simple counter DUT
             └── tb.f
 ```
 
-#### Makefile excution note
+## Makefile excution note
 make comp 
 
 make all TESTNAME=basetest
@@ -59,7 +59,7 @@ make sim TESTNAME=my_case0
 make sim TESTNAME=my_case1
 
 
-#### UVM testbench topology
+## UVM testbench topology
 ```
 ------------------------------------------------------------------
 Name                       Type                        Size  Value
