@@ -4,6 +4,10 @@
 
 UVM testbench environment practice for a simple counter DUT
 
+先使用Direct-test 對DUT進行簡易的測試
+
+再搭建UVM testbench environment 對DUT進行測試
+
 
 ## Verification Environment
 ```
